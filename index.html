@@ -29,18 +29,15 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- Tíyulo de la página -->
-    <title>Document</title>
+    <title>Introducción a javascript</title>
 
-    <script src="assets/js/scripts.js"></script>
+
 </head>
 
 
 <body>
 
-    <nav>
-
-    </nav>
-
+    <!-- Título de la página -->
     <header>
         <section class="container" id="tituloprincipal">
             <div>
@@ -54,13 +51,14 @@
 
     <main>
 
-
-
+        <!-- Saludo personalizado, toma el nombre de la solciitud hecha con funcion prompt -->
         <div class="py-5">
             <h2 class="text-center" id="nombre_1"></h2>
             <hr>
         </div>
 
+        <!-- Opciones de los programas a ser ejecutados.  Se usaron Botones de Bootstrap.
+             cada botón llama a una función que está en main.js -->
         <div class="container text-center">
             <button type="button" class="btn btn-primary btn-lg" value="aritmetica_1" onclick="aritmetica()">Aritmética</button>
             <button type="button" class="btn btn-primary btn-lg" value="temperatura_1" onclick="temperatura()">Conversión temperatura</button>
@@ -68,6 +66,7 @@
             <button type="button" class="btn btn-primary btn-lg" value="promedio_1" onclick="promedio()">Promedio de 5 números</button>
         </div>
 
+        <!-- Los resultados de cada función se muestran cambiando el contenido de la etiqueta <p> en la siguiente section -->
         <section class="container text-center">
             <h4 class="text-center pt-4" id="titulo_resultado"></h4>
             <p class="py-3 text-center" id="resultados"></p>
@@ -75,9 +74,9 @@
             <div class="text-center justify-content-around">
                 <button type="button" class="btn btn-primary btn-lg m-auto" id="borrador" onclick="borrar_p()">Borrar resultados</button>
             </div>
-            
         </section>
 
+        <!-- Script para solicitar el nombre del usuario, se ejecuta al caragr la página -->
         <script type="text/javascript">
             window.onload = function () {
                 solicita_nombre();
