@@ -34,15 +34,15 @@ function aritmetica(){
     var num2 = prompt("ingrese el segundo número", 0);
 
     // se calcula la suma, en lugar de usar "parseint" se multpilica cada número por 1
-    var suma = num1 * 1 + num2 * 1;
+    const suma = num1 * 1 + num2 * 1;
     // se calcula la resta de ambos números
-    var resta = num1 - num2;
+    const resta = num1 - num2;
     // multiplicación de ambos números
-    var multi = num1 * num2;
+    const multi = num1 * num2;
     // para la división y el módulo, se determina primero si el divisor es diferente de 0
     if (num2 !== 0){
-        var divi = num1 / num2;
-        var modu = num1 % num2;
+        const divi = num1 / num2;
+        const modu = num1 % num2;
     }
 
     // se escriben los resultados en un único mensaje que luego se escribirá en la sección de resultados
